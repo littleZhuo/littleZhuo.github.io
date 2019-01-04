@@ -15,15 +15,19 @@
   </script>
 
   
-  <title>归档: 2019 | DS-Snow</title>
+  <title>DS-Snow</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="从C++ 转到Java，很多基础都要从头学起。把一些和C++不一样或者容易犯错的地方整理出来。  get方法不应该返回可变类型的成员变量，应该使用clone方法 引申：  可变类型和不可变类型  clone方法      标准的equals的写法  static public class A{          private String field1;          private Str">
+<meta property="og:type" content="article">
 <meta property="og:title" content="DS-Snow">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/01/04/Java基础总结/index.html">
 <meta property="og:site_name" content="DS-Snow">
+<meta property="og:description" content="从C++ 转到Java，很多基础都要从头学起。把一些和C++不一样或者容易犯错的地方整理出来。  get方法不应该返回可变类型的成员变量，应该使用clone方法 引申：  可变类型和不可变类型  clone方法      标准的equals的写法  static public class A{          private String field1;          private Str">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-04T13:20:25.073Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DS-Snow">
+<meta name="twitter:description" content="从C++ 转到Java，很多基础都要从头学起。把一些和C++不一样或者容易犯错的地方整理出来。  get方法不应该返回可变类型的成员变量，应该使用clone方法 引申：  可变类型和不可变类型  clone方法      标准的equals的写法  static public class A{          private String field1;          private Str">
   
     <link rel="alternate" href="/atom.xml" title="DS-Snow" type="application/atom+xml">
   
@@ -107,185 +111,171 @@
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
       <div class="main-inner-content">
-          <style>
-    .post-hover:hover {
-        box-shadow: inset 0 0 100px #000;
-        transition: box-shadow .2s;
-    }
+          <!--博文页面-->
 
-    .sub-post-container .post-hover:hover h3 {
-        text-decoration: underline gray;
-    }
-
-
-    .primary-item-main {
-        height: 330px;
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
         background-size: cover;
+        background-color: lightsteelblue;
     }
 
-    .primary-container .title,
-    .primary-container .sub-title,
-    .primary-container .post-content-text,
-    .primary-container .date {
-        color: #fff;
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
     }
 
-    .post-content-text {
-        color: #f1f1f1!important;
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
     }
 
-    .primary-container .post-hover {
-        background: black;
+    .flow-chart {
+        text-align: center;
     }
 
-    .content-bg-mask {
-        background: rgba(0,0,0,.4);
+    img[alt="post-cover"] {
+        display: none;
     }
-
 </style>
-
-<div style="background: #f5f8f9;">
-    <div id="main-container" class="container" style="padding-top: 20px;">
-        <div class="is-flex main-content justify-center">
-            <section class="column is-9">
-                
-<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
-    <div class="column  is-7-desktop">
-        <a href="/2019/01/04/Java基础总结/">
-            <div class="full-height post-hover" style="
-                         background-image: url('');
-                         height: 350px;
-                         background-size: cover;
-                         background-repeat: no-repeat;
-                         ">
-                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
-                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
-                            Null
-                        </h1>
-                        <div>
-                        
-                            
-                        
-                        </div>
-                        <p class="post-content-text is-marginless has-padding text-shadow">
-                            从C++ 转到Java，很多基础都要从头学起。把一些和C++不一样或者容易犯错的地方整理出来。
-
-get方法不应该返回可变类型的成员变量，应该使用clone方法
-引申：
-
-可变类型和不可变类型
-
-clone方法
-
-
-
-
-
-标准的equa..
-                        </p>
-                        <p class="date text-shadow">2019-01-04</p>
-                        <button class="button is-info is-small">Read More</button>
-                    </div>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>Null</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=a9a2f1aaffd3572c72ef948eeb7a0842/0df3d7ca7bcb0a46516c2d7a6663f6246b60af23.jpg">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> Dyce Dong</span>
+                <span class="post-date sub-title">at: 2019-01-04</span>
             </div>
-        </a>
-    </div>
-    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
-        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
             
-                
-<a class="post-hover" href="/2019/01/02/我们的十年/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('1.jpg')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                我们的十年
-            </h3>
-            
-            
-            <span class="tag is-post-tag">杂记</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                今天是我和我媳妇相遇的第十个元旦，一路走来风风雨雨，但是手一直没有放，而且有了两个可爱的小宝宝。..
-            </p>
-            <p class="date text-shadow is-marginless">2019-01-02</p>
-        </div>
-    </div>
-</a>
-            
+                <div>
+                    
+                </div>
             
         </div>
-    </div>
-    <div class="column is-12 is-hidden-desktop">
-        
-        
-<a class="post-hover" href="/2019/01/02/我们的十年/" style="height: 48.5%">
-    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('1.jpg')">
-        <div class="content-bg-mask full-width full-height has-padding">
-            <h3 class="title is-marginless text-shadow">
-                我们的十年
-            </h3>
-            
-            
-            <span class="tag is-post-tag">杂记</span>
-            
-            
-            <p class="sub-title text-shadow"></p>
-            <p class="is-marginless text-shadow post-content-text">
-                今天是我和我媳妇相遇的第十个元旦，一路走来风风雨雨，但是手一直没有放，而且有了两个可爱的小宝宝。..
-            </p>
-            <p class="date text-shadow is-marginless">2019-01-02</p>
-        </div>
-    </div>
-</a>
-        
-        
-    </div>
-</div>
+        <div class="content" style="overflow: auto">
+            <p><em>从C++ 转到Java，很多基础都要从头学起。把一些和C++不一样或者容易犯错的地方整理出来。</em></p>
+<ol>
+<li><p>get方法不应该返回可变类型的成员变量，应该使用clone方法</p>
+<p>引申：</p>
+<ol>
+<li><p>可变类型和不可变类型</p>
+</li>
+<li><p>clone方法</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li>标准的equals的写法</li>
+</ol>
+<pre><code class="java">static public class A{
 
-                    
-                    
-                
-                    
-                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
-                            <a class="post-hover" href="/2019/01/02/我们的十年/">
-                            <div class="columns" style="min-height: 230px;">
-                                
-                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile" style="margin: 10px; background-size: cover;background-image: url('1.jpg')">
-                                    </div>
-                                
-                                <div class="column is-8-desktop post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>我们的十年</h3>
-                                        
-                                        <p>
-                                            
-                                                <span class="tag is-post-tag">杂记</span>
-                                            
-                                        </p>
-                                        <p>
-                                            今天是我和我媳妇相遇的第十个元旦，一路走来风风雨雨，但是手一直没有放，而且有了两个可爱的小宝宝。我很满足，也很感恩。这期间，我也经常向我的朋友介绍我和她相遇的过程，当时没有拍照（谁能预料，也证明我不是提前准备或者谋划），因此这段回忆就只停留在我们的回忆中。这次正好借着这个机会，请画师帮我把心中的记忆勾勒出来。
+        private String field1;
 
-2010年1月1日，对于一个程序员来说一如..
-                                        </p>
-                                        <p>2019-01-02</p>
-                                        <button class="button is-small">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    
-                
-                <!--翻頁-->
-                <nav class="pagination is-flex" style="justify-content: flex-end">
-                    
-                </nav>
-            </section>
+        private String field2;
+
+
+
+        @Override
+
+        public boolean equals(Object otherObject)
+
+        {
+
+            if(this == otherObject) return true;  //自反性
+
+            if(otherObject == null) return false;  //
+
+            if(otherObject.getClass() != getClass()) return false; //相同的类型
+
+            A other = (A) otherObject;
+
+            return super.equals(other) //先比较父类的域
+
+                    &amp;&amp; field1 == other.field1 //基本类型使用==
+
+                    &amp;&amp; Objects.equals(field2, other.field2); //引用类型使用==
+
+        }
+
+    }
+</code></pre>
+<p>​    对于数组类型，使用Arrays.equals</p>
+<ol start="3">
+<li><p>如果重写了equals，那么必须重新定义hashCode，标准写法</p>
+<pre><code class="java">public int hashCode() {
+
+    return Objects.hash(field1, fields2,….);
+
+}
+</code></pre>
+</li>
+</ol>
+<ol start="4">
+<li>数组的toString没有重写，导致不是期望的数组内容打印，需要调用Arrays.toString静态方法，如果是多维数组，使用Arrays.deepToString</li>
+</ol>
+<ol start="5">
+<li>Java SE 8开始，Interface允许增加静态方法，这样比如Path类和Paths.get方法就可以合并，不需要单独再增加Paths类。</li>
+</ol>
+<ol start="6">
+<li>对于迭代器Iterator，如果需要调用remove删除，必须先调用next越过去。这点和C++很不一样。</li>
+</ol>
+
+        </div>
+        <div class="post-reply">
+            
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+            
             
         </div>
     </div>
-</div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+
+<!-- for code block highlight --> 
+<!-- theme.block_highlight -->
+<!-- we do not guarantee the char sequences spell right, usr himself do it -->
+<link rel="stylesheet" href="/css/highlight_rainbow.css">
+<script src="/js/highlight.min.js"></script>
+<script type="text/javascript"> hljs.initHighlightingOnLoad();</script>
 
       </div>
   </div>
